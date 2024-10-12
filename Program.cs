@@ -1,4 +1,9 @@
+
+using KeyVaultPoC.Services;
+
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddSingleton<SecretService>();
 
 // Add services to the container.
 
